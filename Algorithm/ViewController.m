@@ -18,10 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSArray<NSNumber *> *unsortedNums = [NSArray arrayWithObjects:@8, @5, @7, @4, @9, @2, @6, @1, @3, nil];
-    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[BubbleSort class]];
-    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[SelectionSort class]];
-    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[InsertionSort class]];
+    NSArray<NSNumber *> *unsortedNums = [NSArray arrayWithObjects:
+                                         @8, @5, @7, @4, @9, @2, @6, @1, @3, nil];
+//    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[BubbleSort class]];
+//    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[SelectionSort class]];
+//    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[InsertionSort class]];
+//    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[QuickSort class]];
+    [Algorithm sort:[unsortedNums mutableCopy] withAlg:[HeapSort class]];
 }
 
 

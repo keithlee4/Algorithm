@@ -21,6 +21,12 @@
 @interface InsertionSort: NSObject<SortAlgorithm>
 @end
 
+@interface QuickSort: NSObject<SortAlgorithm>
+@end
+
+@interface HeapSort: NSObject<SortAlgorithm>
+@end
+
 @interface Algorithm : NSObject
 + (void)sort: (NSMutableArray<NSNumber *> *) input withAlg: (Class) alg;
 @end
